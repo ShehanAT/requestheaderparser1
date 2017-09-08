@@ -29,12 +29,10 @@ app.get(api, function(req, res, next){
 
    res.json({'ipaddress': ipaddress , 'language':language[1], 'software':software});
 });
-if(!module.parent){
-    app.listen(2999);
-}
-app.listen(3000, function(){//listen on port 3000
-    console.log('Working');
+
+app.listen(process.env.PORT || 5000)//listen on port 3000
+
    
-});
+;
 //nodemon auto saves and updates
 //take software and concatanate a nice string 
