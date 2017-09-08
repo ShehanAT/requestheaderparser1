@@ -20,6 +20,10 @@ app.use(useragent.express());
 
 
 //storing api's in variables 
+app.get('/', function(req, res, next){
+    res.send('Express Works');
+})
+
 var api = '/api/whoami';
 
 app.get(api, function(req, res, next){
