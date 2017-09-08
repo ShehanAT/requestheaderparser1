@@ -29,7 +29,7 @@ app.get(api, function(req, res, next){
 
    res.json({'ipaddress': ipaddress , 'language':language[1], 'software':software});
 });
-app.listen(3000, function(){//listen on port 3000
+app.listen(3001, function(){//listen on port 3000
     console.log('Working');
    
 });
